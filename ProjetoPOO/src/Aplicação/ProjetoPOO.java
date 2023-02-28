@@ -500,15 +500,15 @@ static ArrayList<Produto> produtos = new ArrayList<Produto>();
         Scanner j = new Scanner(System.in);
         int op;
         
-        System.out.println("Deseja: \n1- Adicionar produto\n2- Acrescentar quantidade do produto\n3- Apagar produto"
-                + "\n4- Mostrar Status do produto\n5- Voltar tela de login");
-        teclado = j.next();
-        op = Integer.parseInt(teclado);
-        
         pd = pesquisarAPtPD(h);
         
         do
         {
+            System.out.println("Deseja: \n1- Adicionar produto\n2- Acrescentar quantidade do produto\n3- Apagar produto"
+                + "\n4- Mostrar Status do produto\n5- Voltar tela de login");
+            teclado = j.next();
+            op = Integer.parseInt(teclado);
+            
             switch(op)
             {
                 case 1:
